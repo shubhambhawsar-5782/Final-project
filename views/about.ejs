@@ -1,0 +1,61 @@
+<%- include('partials/header'); -%>
+
+    <head>
+        <style>
+            .container_ {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 60px;
+            }
+            
+            .container1_ {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 10px;
+            }
+            
+            .h3 {
+                margin-top: 15px;
+            }
+            
+            #first_ {
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-width: 1px;
+                /* border: 3px solid rgb(179, 14, 14); */
+                overflow: hidden;
+                -webkit-border-radius: 50px;
+                -moz-border-radius: 50px;
+                border-radius: 50%;
+                width: 300px;
+                height: 300px;
+            }
+            
+            b {
+                color: brown;
+            }
+        </style>
+    </head>
+    <h1>About</h1>
+    <h3 class="h3">We provide services related to fitness and Yoga, our aim is to make healthy world or India, be a part of our Family. We belive in Yoga because everything is possible through Yoga.</h3>
+    <br>
+    <hr>
+    <h1 align="center">How to reach us</h1>
+    <div class="container_">
+        <div id="first_"><img src="/images/b.jpg" alt="No image"></div>
+        <div id="first_"><img src="/images/b.jpg" alt="No image"></div>
+        <div id="first_"><img src="/images/b.jpg" alt="No image"></div>
+    </div>
+    <div class="container1_">
+        <div id="edit">
+            <center><b>Yoga Master</b><br> Prakash Patel</center>
+        </div>
+        <div>
+            <center><b>Pilates Instructor</b><br> Sourabh Patil</center>
+        </div>
+        <div>
+            <center><b>Yoga Teacher</b><br> Kundan Mahore</center>
+        </div>
+    </div><br>
+    <hr>
+    <%- include('partials/footer'); -%>

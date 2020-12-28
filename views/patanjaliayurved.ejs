@@ -1,0 +1,138 @@
+<%- include('partials/header'); -%>
+    <h1>Patanjali Ayurved Products</h1><br>
+    <img src="/images/patanjali1.jpg" alt="" width="100%" height="400px">
+    <style>
+        #grid-container {
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            grid-gap: 1%;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin: 5%;
+        }
+        
+        .grid-item {
+            font-family: 'Lobster', cursive;
+            text-align: center;
+            font-size: 1em;
+            color: rgb(250, 250, 250);
+            padding: 5px;
+        }
+        /* The padding-bottom is calculated to keep the 16:9 aspect ratio */
+        
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* Keeps the 16:9 ratio */
+            height: 0;
+        }
+        /* Use absolute positioning to place the iframe correctly in it's contianer */
+        
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            #grid-container {
+                grid-template-columns: 45% 45%;
+                grid-gap: 2%;
+            }
+        }
+    </style>
+
+    <body>
+
+        <div id="grid-container">
+            <div class="grid-item">
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZyKFTPwgMXs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <!-- video-wrapper--->
+                <h2>Patanjali Control Hair Fall Oil</h2>
+            </div>
+            <!--- grid-item--->
+
+            <div class="grid-item">
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AUCnY4wdUek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <!-- video-wrapper--->
+                <h2>Patanjali Amla, Aloevera Juice</h2>
+            </div>
+            <!--- grid-item--->
+
+            <div class="grid-item">
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hBh7VzLVh1U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <!-- video-wrapper--->
+                <h2>Patanjali Saundarya</h2>
+            </div>
+            <!--- grid-item--->
+
+            <div class="grid-item">
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UEQSR4ZXaT4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <!-- video-wrapper--->
+                <h2> Patanjali Shatavar Churna</h2>
+            </div>
+            <!--- grid-item--->
+
+            <div class="grid-item">
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ONM5fSiZ-gU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <!-- video-wrapper--->
+                <h2>Patanjali Cow Desi Ghee</h2>
+            </div>
+            <!--- grid-item--->
+
+            <div class="grid-item">
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WYY8z6WZfHo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <!-- video-wrapper--->
+                <h2> Patanjali Dant Kanti Toothpaste</h2>
+            </div>
+            <!--- grid-item--->
+
+            <div class="grid-item">
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RRIhQDJuCTQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <!-- video-wrapper--->
+                <h2>Patanjali Mustard Oil</h2>
+            </div>
+            <!--- grid-item--->
+
+            <div class="grid-item">
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hn_psw4R1Aw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <!-- video-wrapper--->
+                <h2>Patanjali Divya Kantilep</h2>
+            </div>
+            <!--- grid-item--->
+
+            <div class="grid-item">
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CWlOFrNaDxM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <!-- video-wrapper--->
+                <h2>Patanjali Herbal Power Vita</h2>
+            </div>
+            <!--- grid-item--->
+
+        </div>
+        <!--- container --->
+
+
+
+    </body>
+    <%- include('partials/footer'); -%>

@@ -1,0 +1,95 @@
+<%- include('partials/header'); -%>
+
+    <head>
+        <style>
+            body {
+                padding: 1rem;
+                font-family: Verdana, Geneva, sans-serif;
+            }
+            
+            p {
+                margin: .5rem 0;
+                font-size: 1.25rem;
+                line-height: 1.5;
+                color: white;
+            }
+            /* First the Grid */
+            
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                grid-gap: 1.5rem;
+                justify-items: center;
+                margin: 0;
+                padding: 0;
+            }
+            /* The Picture Frame */
+            
+            .gallery-frame {
+                padding: .5rem;
+                font-size: 1.2rem;
+                text-align: center;
+                background-color: rgb(247, 14, 14);
+                color: #d9d9d9;
+            }
+            /* The Images */
+            
+            .gallery-img {
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+                transition: opacity 0.25s ease-in-out;
+            }
+            
+            .gallery-img:hover {
+                opacity: .7;
+            }
+            
+            #link {
+                color: rgb(20, 13, 4);
+            }
+        </style>
+    </head>
+
+    <body>
+        <center>
+            <h2>Diffrent types of Pranayam</h2>
+        </center>
+        <div class="gallery-grid">
+            <figure class="gallery-frame">
+                <img class="gallery-img" src="/images/kapalbhati.jpg" alt="symbol image" title="symbol image">
+                <figcaption>
+                    <a id="link" href="https://www.youtube.com/watch?v=ADlicBkEoic"><b>Kapalbhati</b></a></figcaption>
+                <p>
+                    This yogic breathing exercise seeks to rid your body of harmful toxins. In fact, 'Kapal' means 'forehead' and 'bhati' denotes 'shining'. So, according to yoga experts, kapalbhati is something that ensures a 'shining forehead', a symbol of a bright and
+                    healthy mind.</p>
+            </figure>
+
+            <figure class="gallery-frame">
+                <img class="gallery-img" src="/images/anulom.jpg" alt="symbol image" title="symbol image">
+                <figcaption><a id="link" href="https://www.youtube.com/watch?app=desktop&v=H7g1BMalpdw"><b>Anulom-Vilom</b></a> </figcaption>
+                <p>Anulom vilom is a specific type of controlled breathing (pranayama) in the practice of yoga. It involves holding one nostril closed while inhaling, then holding the other nostril closed while exhaling. The process is then reversed and
+                    repeated.
+                </p>
+            </figure>
+
+            <figure class="gallery-frame">
+                <img class="gallery-img" src="/images/bhastrika.jpg" alt="symbol image" title="symbol image">
+                <figcaption><a id="link" href="https://www.youtube.com/watch?v=1MjYspegKpo"><b>Bhastrika</b></a></figcaption>
+                <p>When we do any physical exercise our body demands more oxygen, which signals the heart to pump faster, thus raising the heartbeat. But did you know that when you do Bhastrika Pranayama, you pump even more quantity of oxygen even without
+                    the body not asking for it. Bhastrika Pranayama is the process of rapid inhalation and exhalation which gives a boost to the body and hence is aptly called the yogic breath of fire. So, the next time you feel like your body needs energy,
+                    try Bhastrika Pranayama instead.</p>
+            </figure>
+            <figure class="gallery-frame">
+                <img class="gallery-img" src="/images/ujjayi.jpg" alt="symbol image" title="symbol image">
+                <figcaption><a id="link" href="https://www.youtube.com/watch?app=desktop&v=T46ISZf1mpI"><b>Ujjayi</b></a></figcaption>
+                <p>Ocean Breath (Ujjayi Pranayama) is most often used in support of yoga postures, especially in the Vinyasa style. In this breathing technique, you constrict the back of the throat to support lengthening each breath cycle. Each inhalation
+                    and exhalation is long, full, deep, and controlled.</p>
+            </figure>
+            <figure class="gallery-frame">
+                <img class="gallery-img" src="/images/bhramari.jpg" alt="symbol image" title="symbol image">
+                <figcaption><a id="link" href="https://www.youtube.com/watch?v=wXXO5oU1ApA"><b>Bhramari & Udgeeth </b></a></figcaption>
+                <p>Bhramari Pranayama, also known as Humming Bee Breath, is a calming breathing practice that soothes the nervous system and helps to connect us with our truest inner nature<br>The Sanskrit word udgeeth means “ deep and rhythmic chant” hence
+                    this pranayama involves a deep and rhythmic chant of the divine syllable of AUM(OM), AUM is the most perfect and complete name of the almighty eternal supreme soul ( GOD) in the Vedic scriptures and ancient Indian tradition.</p>
+            </figure>
+    </body>
+    <%- include('partials/footer'); -%>

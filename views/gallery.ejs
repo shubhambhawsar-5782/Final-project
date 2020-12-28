@@ -1,0 +1,127 @@
+<%- include('partials/header'); -%>
+
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            
+            html {
+                font-size: 100%;
+            }
+            
+            body {
+                padding: 1rem;
+                font-family: Verdana, Geneva, sans-serif;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+                font-weight: bold;
+                line-height: 1.5;
+            }
+            
+            p {
+                margin: .5rem 0;
+                font-size: 1.25rem;
+                line-height: 1.5;
+            }
+            /* First the Grid */
+            
+            .gallery-grid {
+                display: -ms-grid;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                grid-gap: 1.5rem;
+                justify-items: center;
+                margin: 0;
+                padding: 0;
+            }
+            /* The Picture Frame */
+            
+            .gallery-frame {
+                padding: .5rem;
+                font-size: 1.2rem;
+                text-align: center;
+                background-color: rgb(238, 9, 9);
+                color: #d9d9d9;
+            }
+            /* The Images */
+            
+            .gallery-img {
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+                transition: opacity 0.25s ease-in-out;
+            }
+            
+            .gallery-img:hover {
+                opacity: .7;
+            }
+            
+            #link {
+                color: antiquewhite;
+            }
+        </style>
+    </head>
+
+    <body>
+        <center>
+            <h2>Diffrent types of Yaga Asans</h2>
+        </center>
+        <div class="gallery-grid">
+            <figure class="gallery-frame">
+                <img class="gallery-img" src="/images/Vrikshasana1.jpg" alt="symbol image" title="symbol image">
+                <figcaption>
+                    <a id="link" href="https://www.youtube.com/watch?app=desktop&v=6kZ7uPMs5oo">Vrikshasana</a></figcaption>
+            </figure>
+            <figure class="gallery-frame">
+                <img class="gallery-img" src="/images/Trikonasana.jpg" alt="symbol image" title="symbol image">
+                <figcaption><a id="link" href="https://www.youtube.com/watch?app=desktop&v=rfOmGH6bM1o">Trikonasana</a> </figcaption>
+            </figure>
+            <figure class="gallery-frame">
+                <img class="gallery-img" src="/images/Paschimottanasana.jpg" alt="symbol image" title="symbol image">
+                <figcaption><a id="link" href="https://www.youtube.com/watch?v=5NXOIeF22Ig">Paschimottanasana</a></figcaption>
+            </figure>
+            <figure class="gallery-frame">
+                <img class="gallery-img" src="/images/Tadasana.jpg" alt="symbol image" title="symbol image">
+                <figcaption><a id="link" href="https://www.youtube.com/watch?v=t4EFxQDhA8A">Tadasana</a></figcaption>
+            </figure>
+            <figure class="gallery-frame">
+                <img class="gallery-img" src="/images/Bhujangasana.jpg" alt="symbol image" title="symbol image">
+                <figcaption><a id="link" href="https://www.youtube.com/watch?v=F76hKgBJVnI">Bhujangasana</a></figcaption>
+            </figure>
+            <figure class="gallery-frame">
+                <img class="gallery-img" src="/images/Shalabhasana.jpg" alt="symbol image" title="symbol image">
+                <figcaption><a id="link" href="youtube.com/watch?app=desktop&v=5OZfc285BSk">Shalabhasana</a></figcaption>
+            </figure>
+            <figure class="gallery-frame">
+                <img class="gallery-img" src="/images/Markatasana.jpg" alt="symbol image" title="symbol image">
+                <figcaption>
+                    <a id="link" href="https://www.youtube.com/watch?app=desktop&v=ABtPgOXSLFA">Markatasana</a></figcaption>
+            </figure>
+            <figure class="gallery-frame">
+                <img class="gallery-img" src="/images/Pawanmuktasana.jpg" alt="symbol image" title="symbol image">
+                <figcaption><a id="link" href="https://www.youtube.com/watch?app=desktop&v=ZKvGqNE7oe4">Pawanmuktasana</a></figcaption>
+            </figure>
+            <figure class="gallery-frame">
+                <img class="gallery-img" src="/images/Dhanur-Asana.jpg" alt="symbol image" title="symbol image">
+                <figcaption><a id="link" href="https://www.youtube.com/watch?v=BXIXv2q2mXQ">Dhanur-Asana</a></figcaption>
+            </figure>
+            <figure class="gallery-frame">
+                <img class="gallery-img" src="/images/Vakrasana.jpg" alt="symbol image" title="symbol image">
+                <figcaption><a id="link" href="https://www.youtube.com/watch?v=llI0bhzI92o">Vakrasana</a></figcaption>
+            </figure>
+            <figure class="gallery-frame">
+                <img class="gallery-img" src="/images/Shashankasana.jpg" alt="symbol image" title="symbol image">
+                <figcaption><a id="link" href="https://www.youtube.com/watch?app=desktop&v=Lw3deKifi3U">Shashankasana</a></figcaption>
+            </figure>
+            <figure class="gallery-frame">
+                <img class="gallery-img" src="/images/Gomukhasana.jpg" alt="symbol image" title="symbol image">
+                <figcaption><a id="link" href="https://www.youtube.com/watch?v=Wnwdz5beynQ">Gomukhasana</a></figcaption>
+            </figure>
+        </div>
+        <!-- end:gallery-grid -->
+    </body>
+
+    <%- include('partials/footer'); -%>
