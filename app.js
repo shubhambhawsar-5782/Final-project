@@ -51,7 +51,7 @@ app.post('/contact', function(req, res) {
 
     });
     return res.send('Thankyou for Contact us')
-        // return res.redirect('signup_success.html');
+        // return res.redirect('/thankyou.ejs');
 })
 app.engine("html", require("ejs").renderFile);
 app.use(express.static("views"));

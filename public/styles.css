@@ -39,7 +39,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 120px;
+    margin-bottom: 50px;
 }
 
 nav ul {
@@ -181,6 +181,6 @@ header .btn {
 
 footer {
     text-align: center;
-    margin-top: 120px;
+    margin-top: 50px;
     color: #aaa;
 }
